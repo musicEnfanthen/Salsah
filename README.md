@@ -16,6 +16,10 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 ## Developer Environment
 
 ### Developer Install
+Install [angular-cli](https://github.com/angular/angular-cli) first.
+
+After cloning the Salsah code, you have to install the node package dependencies.
+
 Run `npm install`
  If there are some problems during the installation, try to install the following packages:
  `npm install @types/node --save-dev`
@@ -27,6 +31,14 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ### Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+
+The SALSAH structure contents directories for each module type.
+ `components/`, `directives/`, `services/`, `pipes/` 
+ 
+ The 'components' folder has some sub folders depending on the Salsah architecture definition. To create a new component, like the imageObject, you have to run the ng command as follow:
+  
+ `ng g component components/object/image-object`
+
 
 ### Build
 
