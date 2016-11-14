@@ -7,11 +7,13 @@ import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/framework/header/header.component';
+import { VideoObjectComponent } from './components/object/video-object/video-object.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        HeaderComponent
+        HeaderComponent,
+        VideoObjectComponent
     ],
     imports: [
         BrowserModule,
