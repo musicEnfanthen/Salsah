@@ -1,6 +1,6 @@
 {
     "name": "salsah-2",
-    "version": "0.0.0",
+    "version": "v2.0.0-alpha.1",
     "license": "MIT",
     "angular-cli": {},
     "scripts": {

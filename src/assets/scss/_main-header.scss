@@ -1,0 +1,30 @@
+
+.fill-remaining-space {
+    flex: 1 1 auto
+}
+
+img.logo {
+    height: 48px;
+    margin-top: 16px;
+}
+
+.md-menu.salsah-project-selection {
+    max-width: 420px;
+    div {
+        min-height: 32px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        span.salsah-user-project {
+            max-width: 320px;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            white-space: pre-wrap;
+        }
+        span.salsah-admin-button {
+            right: 12px;
+            position: absolute;
+        }
+    }
+}

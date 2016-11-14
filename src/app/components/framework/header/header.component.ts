@@ -31,10 +31,11 @@ export class HeaderComponent implements OnInit {
     /* Developer object: just a sample to create a dummy header */
     /*                                                          */
 
+    // default project settings
     currentProject: Object = {
         name: 'SALSAH',
         title: 'System for Annotation and Linkage of Sources in Arts and Humanities',
-        logo: './styles/img/salsah-logo.png',
+        logo: './assets/img/salsah-logo.png',
         login: 'http://salsah.org',
     };
 
