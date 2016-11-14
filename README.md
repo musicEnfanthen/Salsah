@@ -21,9 +21,13 @@ Install [angular-cli](https://github.com/angular/angular-cli) first.
 After cloning the Salsah code, you have to install the node package dependencies.
 
 Run `npm install`
- If there are some problems during the installation, try to install the following packages:
- `npm install @types/node --save-dev`
- `npm install webpack-dev-server --save-dev`
+
+If there are some problems during the installation, try to install the following packages:
+    
+    npm install @types/node
+    
+    npm install webpack-dev-server
+
 
 ### Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
