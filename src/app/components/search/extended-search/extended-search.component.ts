@@ -12,10 +12,18 @@
  * License along with SALSAH.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-@import 'main-header';
-@import 'search';
+import { Component, OnInit } from '@angular/core';
 
-body {
-    margin: 0;
-    padding: 0;
+@Component({
+  selector: 'salsah-extended-search',
+  templateUrl: './extended-search.component.html',
+  styleUrls: ['./extended-search.component.css']
+})
+export class ExtendedSearchComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
 }
