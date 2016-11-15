@@ -16,15 +16,49 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule, Routes } from '@angular/router';
 
+//
+// import the material design modules
+//
 import { MaterialModule } from '@angular/material';
 
+//
+//  import all components
+//
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/framework/header/header.component';
 import { VideoObjectComponent } from './components/object/video-object/video-object.component';
 import { SimpleSearchComponent } from './components/search/simple-search/simple-search.component';
 import { SearchComponent } from './components/search/search.component';
 import { ExtendedSearchComponent } from './components/search/extended-search/extended-search.component';
+import { GridViewComponent } from './components/view/grid-view/grid-view.component';
+import { ListViewComponent } from './components/view/list-view/list-view.component';
+import { TableViewComponent } from './components/view/table-view/table-view.component';
+import { DashboardViewComponent } from './components/view/dashboard-view/dashboard-view.component';
+import { PageNotFoundComponent } from './components/framework/page-not-found/page-not-found.component';
+import { ResultsViewComponent } from './components/view/results-view/results-view.component';
+
+//
+// import all services
+//
+import { SearchService } from './services/search.service';
+
+
+//
+// define all routes
+//
+const appRoutes: Routes = [
+    {
+        path: '',
+        component: DashboardViewComponent
+    },
+    {
+        path: 'search/:query', // /:view',
+        component: ResultsViewComponent    // default view for search results
+    },
+    { path: '**', component: PageNotFoundComponent }
+];
 
 @NgModule({
     declarations: [
@@ -33,15 +67,24 @@ import { ExtendedSearchComponent } from './components/search/extended-search/ext
         VideoObjectComponent,
         SimpleSearchComponent,
         SearchComponent,
-        ExtendedSearchComponent
+        ExtendedSearchComponent,
+        GridViewComponent,
+        ListViewComponent,
+        TableViewComponent,
+        DashboardViewComponent,
+        PageNotFoundComponent,
+        ResultsViewComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
         HttpModule,
-        MaterialModule.forRoot()
+        MaterialModule.forRoot(),
+        RouterModule.forRoot(appRoutes)
     ],
-    providers: [],
+    providers: [
+        SearchService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

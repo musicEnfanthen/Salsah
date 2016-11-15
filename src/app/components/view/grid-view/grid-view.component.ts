@@ -12,11 +12,19 @@
  * License along with SALSAH.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-@import 'error';
-@import 'main-header';
-@import 'search';
+import { Component, OnInit } from '@angular/core';
 
-body {
-    margin: 0;
-    padding: 0;
+@Component({
+  selector: 'salsah-grid-view',
+  templateUrl: './grid-view.component.html',
+  styleUrls: ['./grid-view.component.css']
+})
+
+export class GridViewComponent implements OnInit {
+
+    constructor() { }
+
+    ngOnInit() {
+    }
+
 }

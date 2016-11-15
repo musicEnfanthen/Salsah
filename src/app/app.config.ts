@@ -12,11 +12,6 @@
  * License along with SALSAH.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-@import 'error';
-@import 'main-header';
-@import 'search';
-
-body {
-    margin: 0;
-    padding: 0;
+export class AppConfig {
+    public static get API_ENDPOINT(): string { return 'http://localhost:3333/v1/'; }
 }

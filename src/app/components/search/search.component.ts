@@ -13,7 +13,7 @@
  * */
 
 import { Component, HostListener, OnInit, Input } from '@angular/core';
-// import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
     selector: 'salsah-search',
@@ -39,11 +39,13 @@ export class SearchComponent implements OnInit {
     private panelSize: string = 'small';
 
     private simpleSearch(searchQuery: string) {
-//        this.router.navigate(['/search/' + this._searchQuery], {relativeTo: this.route});
+        this.router.navigate(['/search/' + this._searchQuery], {relativeTo: this.route});
     }
 
-//    constructor(private route: ActivatedRoute, private router: Router) { }
-    constructor() {}
+    constructor(private route: ActivatedRoute, private router: Router) { }
+
+//    constructor() {}
+
     ngOnInit() {
     }
 

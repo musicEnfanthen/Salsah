@@ -12,11 +12,18 @@
  * License along with SALSAH.  If not, see <http://www.gnu.org/licenses/>.
  * */
 
-@import 'error';
-@import 'main-header';
-@import 'search';
+import { Component, OnInit } from '@angular/core';
 
-body {
-    margin: 0;
-    padding: 0;
+@Component({
+  selector: 'salsah-table-view',
+  templateUrl: './table-view.component.html',
+  styleUrls: ['./table-view.component.css']
+})
+
+export class TableViewComponent implements OnInit {
+    constructor() { }
+
+    ngOnInit() {
+    }
+
 }
