@@ -43,6 +43,7 @@ import { ResultsViewComponent } from './components/view/results-view/results-vie
 // import all services
 //
 import { SearchService } from './services/search.service';
+import { CenterElementDirective } from './directives/center-element.directive';
 
 
 //
@@ -73,7 +74,8 @@ const appRoutes: Routes = [
         TableViewComponent,
         DashboardViewComponent,
         PageNotFoundComponent,
-        ResultsViewComponent
+        ResultsViewComponent,
+        CenterElementDirective
     ],
     imports: [
         BrowserModule,
