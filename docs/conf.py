@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Knora documentation build configuration file, created by
+# Salsah documentation build configuration file, created by
 # sphinx-quickstart on Wed Nov  4 09:37:01 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -48,9 +48,9 @@ source_suffix = '.rst'
 master_doc = 'rst/index'
 
 # General information about the project.
-project = u'Knora'
-copyright = u'2015, Lukas Rosenthaler, Benjamin Geer, Ivan Subotic, Tobias Schweizer, André Kilchenmann, and André Fatton'
-author = u'Lukas Rosenthaler, Benjamin Geer, Ivan Subotic, Tobias Schweizer, André Kilchenmann, and André Fatton'
+project = u'Salsah'
+copyright = u'2016, Lukas Rosenthaler, André Kilchenmann, Andreas Aeschlimann, Sofia Georgakopoulou, Ivan Subotic, Benjamin Geer, Tobias Schweizer'
+author = u'Lukas Rosenthaler, André Kilchenmann, Andreas Aeschlimann, Sofia Georgakopoulou, Ivan Subotic, Benjamin Geer, Tobias Schweizer'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -202,7 +202,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Knoradoc'
+htmlhelp_basename = 'Salsahdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -224,7 +224,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'Knora.tex', u'Knora Documentation',
+  (master_doc, 'Salsah.tex', u'Salsah Documentation',
    u'Digital Humanities Lab, University of Basel', 'manual'),
 ]
 
@@ -254,7 +254,7 @@ latex_use_parts = True
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'knora', u'Knora Documentation',
+    (master_doc, 'salsah', u'Salsah Documentation',
      [author], 1)
 ]
 
@@ -268,8 +268,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'Knora', u'Knora Documentation',
-   author, 'Knora', 'One line description of project.',
+  (master_doc, 'Salsah', u'Salsah Documentation',
+   author, 'Salsah', 'One line description of project.',
    'Miscellaneous'),
 ]
 

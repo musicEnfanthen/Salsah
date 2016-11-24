@@ -62,7 +62,7 @@ html:
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
 jsonformat:
-	$(TYPEDOC) --out $(FORMATDOCDIR) --exclude **/sampleRequests/* --readme none --name "Knora API V1 Format Documentation" --module commonjs $(FORMATSRCDIR)
+	$(TYPEDOC) --out $(FORMATDOCDIR) --exclude **/sampleRequests/* --readme none --name "SALSAH front end V2 Format Documentation" --module commonjs $(FORMATSRCDIR)
 	@echo "Format Docs Build finished. The index page is $(FORMATDOCDIR)/index.html."
 
 dirhtml:
