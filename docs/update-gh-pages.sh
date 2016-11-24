@@ -23,7 +23,7 @@ fi
 # Build the HTML docs.
 
 make html
-make jsonformat
+#make jsonformat
 
 # Copy the built HTML docs to a temporary directory.
 
