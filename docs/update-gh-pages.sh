@@ -38,7 +38,7 @@ git rm -rf ../documentation/guidelines
 
 # Move the new docs from the temporary directory into the git repository tree.
 
-mv $TMP_HTML/guidelines ../documentation
+mv $TMP_HTML/ ../documentation
 
 # Commit the changes to the gh-pages branch, and push to origin.
 
