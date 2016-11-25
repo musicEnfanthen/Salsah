@@ -29,20 +29,20 @@ make html
 
 rm -rf $TMP_HTML
 mkdir $TMP_HTML
-cp -R _build/html $TMP_HTML/developer
+cp -R _build/html $TMP_HTML/guidelines
 
 # Switch to the gh-pages branch and remove the existing HTML docs from it.
 
 git checkout gh-pages
-git rm -rf ../documentation/developer
+git rm -rf ../documentation/guidelines
 
 # Move the new docs from the temporary directory into the git repository tree.
 
-mv $TMP_HTML/developer ../documentation
+mv $TMP_HTML/guidelines ../documentation
 
 # Commit the changes to the gh-pages branch, and push to origin.
 
-git add ../documentation/developer
+git add ../documentation/guidelines
 git commit -m "Update gh-pages."
 git push origin gh-pages
 
