@@ -1,5 +1,5 @@
 ..  Copyright © 2016 Lukas Rosenthaler, André Kilchenmann, Andreas Aeschlimann,
-    Benjamin Geer, Ivan Subotic, Tobias Schweizer.
+    Sofia Georgakopoulou, Ivan Subotic, Benjamin Geer, Tobias Schweizer.
     This file is part of SALSAH.
     SALSAH is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published

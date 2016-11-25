@@ -1,5 +1,5 @@
 ..  Copyright © 2016 Lukas Rosenthaler, André Kilchenmann, Andreas Aeschlimann,
-    Benjamin Geer, Ivan Subotic, Tobias Schweizer.
+    Sofia Georgakopoulou, Ivan Subotic, Benjamin Geer, Tobias Schweizer.
     This file is part of SALSAH.
     SALSAH is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -14,6 +14,39 @@
 
 salsahProperty
 ==============
+
+various GUI elements for different properties like salsahSelection
+(simple and hierarchical), salsahLocation (geonmame connection),
+salsahResourcePointer, salsahText, salsahNumber, salsahDate (simple and
+as a period), salsahTime, salsahRegion (?)
+
+stringElement (text)
+--------------------
+
+numberElement (integer or floating point)
+-----------------------------------------
+
+richtextElement (textarea)
+--------------------------
+
+dateElement (incl. period)
+--------------------------
+
+timeElement (incl. interval)
+----------------------------
+
+locationElement (connection to geonames.org)
+--------------------------------------------
+
+resourcePointerElement (autocomplete or dropdown)
+-------------------------------------------------
+
+selectionElement (dropdown, checkbox or radio)
+----------------------------------------------
+
+hierarchicalListElement (dropdown or radio)
+-------------------------------------------
+
 
 
 
