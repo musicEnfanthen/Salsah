@@ -21,6 +21,8 @@ import { RouterModule, Routes } from '@angular/router';
 //
 // import the material design modules
 //
+import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
+
 import { MaterialModule } from '@angular/material';
 
 //
@@ -61,6 +63,11 @@ const appRoutes: Routes = [
     { path: '**', component: PageNotFoundComponent }
 ];
 
+
+import { OntologyComponent } from './components/admin/ontology/ontology.component';
+
+
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -76,6 +83,7 @@ const appRoutes: Routes = [
         PageNotFoundComponent,
         ResultsViewComponent,
         CenterElementDirective
+        OntologyComponent,
     ],
     imports: [
         BrowserModule,
@@ -91,3 +99,5 @@ const appRoutes: Routes = [
 })
 export class AppModule {
 }
+
+platformBrowserDynamic().bootstrapModule(AppModule);
