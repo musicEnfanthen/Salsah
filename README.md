@@ -16,18 +16,33 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 ## Developer Environment
 
 ### Developer Install
-Install [angular-cli](https://github.com/angular/angular-cli) first.
 
-After cloning the Salsah code, you have to install the node package dependencies.
+#### Using angular-cli
+Make sure you are using at least Node 4 or a higher version (as well as NPM 3 or higher). You also should use the default behaviour of NPM 3 or higher (not nesting `node_modules`), else angular-cli is running into issues.
 
-Run `npm install`
+Check `npm config list -l` for option `legacy-bundling = false`
 
-If there are some problems during the installation, try to install the following packages:
-    
+If this option is set to `true` (what forces node-modules to be installed within nested directories), use the `--legacy-bundling` flag when installing angular-cli or globally set back your npm config to its default behaviour (`npm set legacy-bundling=false`). See this [SO article concerning legacy-bundling](http://stackoverflow.com/a/35227212).
+
+Install [angular-cli](https://github.com/angular/angular-cli).
+
+#### Installing project
+After forking the Salsah code, you have to install the node package dependencies:
+
+Check `npm config get production`
+
+If `production` is set to `true` (= production environment), running `npm install` will skip `devDependencies` of your `package.json`. This is not recommended because you will have to install all `devDependencies` seperately (see this [SO article](http://stackoverflow.com/a/35098833)).
+
+Run `npm install` inside your Salsah project folder.
+
+If there are still some problems during the installation, try to install the following packages:
+
     npm install @types/node
-    
+
     npm install webpack-dev-server
 
+#### Updating angular-cli
+If you want to update `angular-cli` to a new version, carefully follow the instructions described [here](https://github.com/angular/angular-cli#updating-angular-cli). `ng init` at the end of the update process may have destructive consequences for your existing project files. Make sure not to overwrite them by accident. When asked, use option `d` for each file to check the diffs between your files and the updated default files.
 
 ### Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
