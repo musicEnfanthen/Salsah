@@ -40,13 +40,14 @@ import { TableViewComponent } from './components/view/table-view/table-view.comp
 import { DashboardViewComponent } from './components/view/dashboard-view/dashboard-view.component';
 import { PageNotFoundComponent } from './components/framework/page-not-found/page-not-found.component';
 import { ResultsViewComponent } from './components/view/results-view/results-view.component';
+import { OntologyComponent } from './components/admin/ontology/ontology.component';
 
 //
 // import all services
 //
 import { SearchService } from './services/search.service';
 import { CenterElementDirective } from './directives/center-element.directive';
-
+import { BaseOntologyService } from './components/admin/ontology/base-ontology.service';
 
 //
 // define all routes
@@ -64,9 +65,6 @@ const appRoutes: Routes = [
 ];
 
 
-import { OntologyComponent } from './components/admin/ontology/ontology.component';
-
-
 
 @NgModule({
     declarations: [
@@ -82,7 +80,7 @@ import { OntologyComponent } from './components/admin/ontology/ontology.componen
         DashboardViewComponent,
         PageNotFoundComponent,
         ResultsViewComponent,
-        CenterElementDirective
+        CenterElementDirective,
         OntologyComponent,
     ],
     imports: [
@@ -93,10 +91,12 @@ import { OntologyComponent } from './components/admin/ontology/ontology.componen
         RouterModule.forRoot(appRoutes)
     ],
     providers: [
-        SearchService
+        SearchService,
+        BaseOntologyService,
     ],
     bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }
 
