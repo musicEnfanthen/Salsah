@@ -13,7 +13,13 @@ Salsah is [free software](http://www.gnu.org/philosophy/free-sw.en.html), releas
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.19-3.
 
+You will find more information about Salsah and the documentation (guideline) for developers on: 
+
+**[https://dhlab-basel.github.io/Salsah/](https://dhlab-basel.github.io/Salsah/)**
+
+
 ## Developer Environment
+
 
 ### Developer Install
 
