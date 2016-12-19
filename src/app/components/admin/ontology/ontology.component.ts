@@ -62,6 +62,7 @@ export class OntologyComponent implements OnInit {
         menuItems: [
             {
                 text: this.simpleTxt,
+
                 icon: 'view_headline',
                 routerLink: '/'
             },
@@ -127,3 +128,4 @@ export class BaseOntologyService{
 
 }
 */
+
