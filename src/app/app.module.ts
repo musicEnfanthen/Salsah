@@ -23,8 +23,6 @@ import { RouterModule, Routes } from '@angular/router';
 //
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 
-import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
-
 import { MaterialModule } from '@angular/material';
 
 //
